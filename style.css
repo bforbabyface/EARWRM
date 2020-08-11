@@ -1,0 +1,183 @@
+body {
+  background-color: #e0cf12;
+}
+
+
+.container{
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  max-height: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.main{
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  background: transparent;
+
+
+}
+
+.blue-blob{
+  position: absolute;
+  fill: #19cfb3;
+  width: 100%;
+  height: 100%;
+  left: -60%;
+  top:-20%;
+  z-index: -1;
+  animation: rotationBlue 50s linear infinite;
+
+}
+
+.red-blob{
+  position: absolute;
+  fill: #e32945;
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  transform: rotate(25deg);
+  top: 0;
+  z-index: -1;
+  animation: rotationRed 50s linear infinite;
+}
+
+@keyframes rotationRed {
+  0%{
+     transform: rotate(25deg);
+  }
+
+  25%{
+    transform: rotate(15deg);
+
+  }
+
+  50%{
+    transform: rotate(5deg);
+
+  }
+  90%{
+    transform: rotate(15deg);
+
+  }
+  100%{
+    transform: rotate(25deg);
+
+  }
+}
+
+@keyframes rotationBlue {
+  0%{
+     transform: rotate(0deg);
+  }
+
+  25%{
+    transform: rotate(-10deg);
+
+  }
+
+  50%{
+    transform: rotate(-20deg);
+
+  }
+  90%{
+    transform: rotate(-10deg);
+
+  }
+  100%{
+    transform: rotate(0deg);
+
+  }
+}
+
+
+
+h1 {
+  font-family: 'Barrio', cursive;
+  font-size: 10em;
+  color: white;
+  letter-spacing: 20px;
+  margin-bottom: 0;
+  cursor: default;
+
+}
+
+
+h2 {
+  color: white;
+  font-family: 'GlacialIndifferenceRegular';
+  font-size: 3em;
+  font-weight: 100;
+  margin-top: 0;
+  cursor: default;
+}
+
+span{
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+
+.enter{
+  font-family: 'GlacialIndifferenceRegular';
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  background-color: white;
+  color: #e0cf12;
+  padding: 10px 20px 13px 20px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.enter:focus{
+  outline:none;
+
+}
+
+.enter:hover {
+  cursor: pointer;
+  background-color: #e0cf12;
+  color: white;
+  box-shadow: 0 0 7px rgb(168, 124, 2);
+
+}
+
+.enter:active{
+   transform: translateY(4px);
+}
+
+
+
+.favorite{
+  font-family: 'GlacialIndifferenceRegular';
+  background-color: transparent;
+  color: #f0f0f0;
+  font-size: 1.5em;
+  padding: 5px 20px 7px 20px;
+  border-radius: 10px;
+  border: 3px white solid;
+  outline:none;
+  text-align: center;
+}
+
+.favorite:focus{
+  outline:none;
+
+}
+
+.favorite:hover{
+  box-shadow: 0 0 7px rgb(168, 124, 2);
+}
+
+.favorite:active{
+  box-shadow: 0 0 7px rgb(168, 124, 2);
+  color: white;
+}
